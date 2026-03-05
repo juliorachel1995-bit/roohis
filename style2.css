@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 100px;   
+    border-bottom: 3px double black;
+}
+#logo{
+    height: 100px;
+    margin-left: 30%;
+    border-bottom: 3px double black;
+    width: 45%;
+}
+main{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+form{
+    width: 100%;
+}
+h1 a{
+    text-decoration: none;
+    color: black;
+}
+input{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;   
+    padding: 10px;
+    border-radius: 15px;    
+}
+.aparelho{
+    width: 90%;
+    display: flex;
+}
+select{
+    width: 30%;
+    border-radius: 15px;
+    padding: 0;
+    margin-left: 10%;
+}
+.aparelho input{
+   width: 70%;
+}
+#bo{
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+    resize: vertical;
+}
+button{
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 20%;
+    font-size: 17px;
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(45deg, green, #06490a9d, #0018ff9d, blue);
+}
+footer p{
+    margin-top: 25px;
+}

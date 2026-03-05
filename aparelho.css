@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 100px;   
+    border-bottom: 3px double black;
+}
+#logo{
+    height: 100px;
+    margin-left: 30%;
+    border-bottom: 3px double black;
+    width: 45%;
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.venda{
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    margin-left:5%;
+}
+.venda img{
+    width: 80%;
+    height: 100px;
+    background: linear-gradient(45deg, green, transparent);
+    margin: 5px;
+    border-radius: 10px;
+    animation: 1s;
+}
+.venda img:hover{
+    background: linear-gradient(45deg, blue, transparent);
+}
+.p1{
+    display: flex;
+    justify-content: center;
+}
+input{
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 10px;    
+}
+h1 a{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+button{
+    margin-left: 10px;
+    border-radius: 12px;
+    padding: 3px;
+}
+.produtos{
+    display: flex;
+    width: 100%;
+}
+.ap1, .ap2, .ap3{
+    width: 33%;
+    height: 500px;
+    align-content: center;
+    text-align: center;
+}
+.ap1 img, .ap2 img, .ap3 img{
+    width: 50%;
+    margin-left: 25%;
+    display: block;
+}
+.ap1 a, .ap2 a, .ap3 a{
+    text-decoration: none;
+    border-bottom: 2px dotted green;
+    color: rgb(0, 81, 255);
+}
+.ap1 a:hover{
+    border-bottom: 2px solid rgb(0, 81, 255);
+    color: green;
+}
+.ap2 a:hover{
+    border-bottom: 2px solid rgb(0, 81, 255);
+    color: green;
+}
+.ap3 a:hover{
+    border-bottom: 2px solid rgb(0, 81, 255);
+    color: green;
+}
+.ap1:hover{
+    width: 55%;
+}
+.ap2:hover{
+    width: 55%;
+}
+.ap3:hover{
+    width: 55%;
+}
+footer{
+    width: 100%;
+    height: 70px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(45deg, green, #06490a9d, #0018ff9d, blue);
+}
+footer p{
+    margin-top: 25px;
+}
+
+
+
+@media(max-width: 435px){
+    .p1{
+        flex-direction: column;
+        justify-content: left;
+    }
+    .p1 input{
+        margin: 0;
+    }
+    button{
+        width: 20%;
+        padding: 3px;
+    }
+}
+@media(max-width: 320px){
+    .produtos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ap1{
+        width: 80%;
+        padding: 0;
+        margin: 0;
+    }
+    .ap2{
+        width: 80%;
+        padding: 0;
+        margin: 0;
+    }
+    .ap3{
+        width: 80%;
+        padding: 0;
+        margin: 0;
+    }
+    .venda{
+    grid-template-columns: repeat(3, 2fr);
+    }
+    .venda img{
+        height: 75px;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="roohis_favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROOHIS assistência</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="logo" id="logo"></img>
+    </header>
+    <main>
+        <form id="formulario">
+            <h1><a href="index.html">Assistência</a></h1>
+            <fieldset>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" required>
+                <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
+                <div class="aparelho">
+                    <select name="marca" id="marca">
+                        <option value="escolha">Escolha a marca</option>
+                        <option value="samsung">Samsung</option>
+                        <option value="motorola">Motorola</option>
+                        <option value="LG">LG</option>
+                        <option value="xiaomi">Xiaomi</option>
+                        <option value="apple">Apple</option>
+                    </select>               
+                    <input type="text" id="modelo" placeholder="Modelo do Aparelho" required>
+                </div>
+                <div class="bo">
+                    <input type="text" id="bo" name="bo" placeholder="Oque aconteceu com o aparelho?" required>
+                </div>
+            </fieldset>
+            <button type="submit" id="enviar">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2026 JulioRachel</p>
+    </footer>    
+</body>
+</html>
